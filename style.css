@@ -1,0 +1,185 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: rgb(184, 182, 182);
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebarGo {
+    transform: translateX(-100%);
+}
+
+.sidebar nav ul {
+    padding: 30px;
+}
+
+.sidebar nav ul li {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+/* Main */
+.main {
+    margin-left: 250px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Hamburger */
+.hamburger {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.cross {
+    margin-left: 10px;
+}
+
+/* Info Section */
+.infoContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.devinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hello {
+    font-size: 40px;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.about {
+    font-size: 25px;
+}
+
+.moreAbout {
+    font-size: 18px;
+}
+
+/* Buttons */
+.buttons button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+}
+
+/* Image */
+.devPic img {
+    width: 250px;
+}
+
+/* Skills */
+.skillContainer {
+    padding: 20px;
+}
+
+.skillItem {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.skills {
+    height: 6px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.hundred {
+    width: 250px;
+    background-color: green;
+}
+
+.fifty {
+    width: 125px;
+    background-color: orange;
+}
+
+.twentyFive {
+    width: 75px;
+    background-color: yellow;
+}
+
+/* Contact Form */
+.contactform {
+    padding: 40px;
+}
+
+.contactform input {
+    padding: 8px;
+    margin: 5px 0;
+    width: 250px;
+}
+
+.contactform button {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .main {
+        margin-left: 0;
+    }
+
+    .infoContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .devPic img {
+        width: 150px;
+    }
+}
